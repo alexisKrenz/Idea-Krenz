@@ -5,78 +5,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../styles/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
     <title>Registro</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div>
-                <img src="../img/menu.png" alt="" class="navimg">
-                <ul class="nav">
-                    <li class="navlist"><a href="./../index.html">Inicio</a></li>
-                    <li class="navlist"><a href="../pages/productos.html">Productos</a></li>
-                    <li class="navlist"><a href="../pages/nosotros.html">Nosotros</a></li>
-                    <li class="navlist"><a href="../pages/galeria.html">Galeria</a></li>
-                    <li class="navlist"><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="nav3">
-                <form action="" class="nav2">
-                    <input class="nav5" type="text" placeholder="Buscar">
-                </form>
-            </div>
-            <div class="nav4">
-                <img src="../img/usuario.png" alt="" class="navimg">
-                <form action="" method="get" class="navform">
-                    <input class="nav5" type="text" name="usuario" id="name" placeholder="usuario" required>
-                    <input class="nav5" type="password" name="pass" id="pass" placeholder="contraseña" required>
-                    <input class="nav5" type="submit" value="ingresar">
-                </form>
-            </div>
-        </nav>
+    <header class="navdiv">
+        <div>
+            <img src="../img/menu.png" alt="" class="icon" id="lefticon">
+            <li><a href="../index.html" id="bot">Inicio</a></li>
+            <li class="dropdown"><a class="menudrop dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" id="bot">Paginas</a>
+                <div class="dropdown-menu" role="menu">
+                    <a class="dropdown-item" role="presentation" href="../pages/galeria.html">Galeria</a>
+                    <a class="dropdown-item" role="presentation" href="../pages/productos.html">Productos</a>
+                    <a class="dropdown-item" role="presentation" href="../pages/nosotros.html">Nosotros</a>
+                    <a class="dropdown-item" role="presentation" href="../pages/contacto.html">Contacto</a>
+                    <a class="dropdown-item" role="presentation" href="../pages/registro.html">Registro</a>
+                </div>
+            </li>
+
+
+        </div>
+        <div>
+            <form action="">
+                <input type="search" name="busqueda" id="" class="busqueda" placeholder="Buscar">
+            </form>
+        </div>
+        <div>
+            <form action="">
+                <img src="../img/usuario.png" alt="" class="icon">
+                <button class="ovalado">Log in</button>
+                <button class="ovalado">Ingresar</button>
+            </form>
         </div>
     </header>
-    <main>
-        <fieldset>
-            <div>
-                <legend>
-                    <h1>Registro</h1>
-                </legend>
-            </div>
-            <div>
-                <form action="" method="get" class="formcont">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="" id="nombre" required>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="" id="apellido" required>
-                    <label for="Telefono">Telefono de contacto</label>
-                    <input type="tel" name="" id="telefono" required>
-                    <label for="mail">Email</label>
-                    <input type="email" name="" id="mail" required>
-                    <label for="pass">Contraseña</label>
-                    <input type="password" name="" id="pass" required>
-                    <input type="submit">
-                </form>
-            </div>
-        </fieldset>
-    </main>
-    <footer class="footgrid">
-        <div class="titlgrid">
-            <h5>Nuestras redes</h5>
+
+
+    <titl>
+        <div>
+            <legend>
+                <h1>Registro</h1>
+            </legend>
         </div>
-        <div class="footflex">
-            <ul class="footer__ul">
-                <li class="footer__li"><a href="https://facebook.com" target="_blank"> <img class="png"
-                            src="../img/fc.png" alt=""></a></li>
-                <li class="footer__li"><a href="https://Twitter.com" target="_blank"> <img class="png"
-                            src="../img/tw.png" alt=""></a></li>
-                <li class="footer__li"><a href="https://instagram.com" target="_blank"><img class="png"
-                            src="../img/ig.png" alt=""></a></li>
-            </ul>
+    </titl>
+
+
+    <main>
+        <div>
+            <form action="" method="get" class="formcont">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="" id="nombre" required class="forminp">
+                <label for="apellido">Apellido</label>
+                <input type="text" name="" id="apellido" required class="forminp">
+                <label for="Telefono">Telefono de contacto</label>
+                <input type="tel" name="" id="telefono" required class="forminp">
+                <label for="mail">Email</label>
+                <input type="email" name="" id="mail" required class="forminp">
+                <label for="pass">Contraseña</label>
+                <input type="password" name="" id="pass" required class="forminp">
+                <button type="button submit" class="btn btn-dark formsub">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <aside>
+        <div class="asflex"></div>
+        <h2><b> <i> Noticias relacionadas</i></b></h2>
+        <iframe class="asflex1" width="560" height="315" src="https://www.youtube.com/embed/CptaXqVY6-E"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <iframe class="asflex1" width="560" height="315" src="https://www.youtube.com/embed/o9QjlLdYK5I"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <iframe class="asflex1" width="560" height="315" src="https://www.youtube.com/embed/AN3jEjjcZ-k"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <iframe class="asflex1" width="560" height="315" src="https://www.youtube.com/embed/ERgrFVhL-n4"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+    </aside>
+    <footer>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24">
+                            <use xlink:href="#bootstrap" />
+                        </svg>
+                    </a>
+                    <span class="text-muted">&copy; 2022 Company, Inc</span>
+                </div>
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a href="https://Twitter.com" target="_blank"> <img class="png" src="../img/tw.png"
+                                alt=""></a>
+                        <use xlink:href="#twitter" />
+                        </svg></a>
+                    </li>
+                    <li class="ms-3"><a href="https://instagram.com" target="_blank"><img class="png"
+                                src="../img/ig.png" alt=""></a>
+                        <use xlink:href="#instagram" />
+                        </svg></a>
+                    </li>
+                    <li class="ms-3"><a href="https://facebook.com" target="_blank"> <img class="png"
+                                src="../img/fc.png" alt=""></a></li><svg class="bi" width="24" height="24"></svg></a>
+                    </li>
+                </ul>
         </div>
     </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
