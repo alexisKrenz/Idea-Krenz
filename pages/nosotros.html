@@ -13,16 +13,46 @@
 
 <body>
     <header class="navdiv">
+        <div class="container-fluid fixed-top">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <div class="container-fluid">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="menuNav" class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item p-2"><a class="navbar-link" href="../index.html">Inicio</a></li>
+                            <li class="nav-item p-2"><a class="navbar-link" href="./galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item p-2"><a class="navbar-link" href="./productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item p-2"><a class="navbar-link" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item p-2"><a class="navbar-link" href="./contacto.html">Contacto</a>
+                            <li class="nav-item p-2"><a class="navbar-link" href="./registro.html">Registro</a>
+                            <li class="nav-item p-2"><a class="navbar-link" href="../index.html">Login/Ingresar</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <form action="">
+                            <input type="search" name="busqueda" id="barrainv" class="busqueda" placeholder="Buscar">
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
         <div>
-            <img src="../img/menu.png" alt="" class="icon" id="lefticon">
+            
             <li><a href="../index.html" id="bot">Inicio</a></li>
-            <li class="dropdown"><a class="menudrop dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" id="bot">Paginas</a>
+            <li class="dropdown"><a class="menudrop dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown"
+                    aria-expanded="false" href="#" id="bot">Paginas</a>
                 <div class="dropdown-menu" role="menu">
-                    <a class="dropdown-item" role="presentation" href="../pages/galeria.html">Galeria</a>
-                    <a class="dropdown-item" role="presentation" href="../pages/productos.html">Productos</a>
-                    <a class="dropdown-item" role="presentation" href="../pages/nosotros.html">Nosotros</a>
-                    <a class="dropdown-item" role="presentation" href="../pages/contacto.html">Contacto</a>
-                    <a class="dropdown-item" role="presentation" href="../pages/registro.html">Registro</a>
+                    <a class="dropdown-item" role="presentation" href="./galeria.html">Galeria</a>
+                    <a class="dropdown-item" role="presentation" href="./productos.html">Productos</a>
+                    <a class="dropdown-item" role="presentation" href="./nosotros.html">Nosotros</a>
+                    <a class="dropdown-item" role="presentation" href="./contacto.html">Contacto</a>
+                    <a class="dropdown-item" role="presentation" href="./registro.html">Registro</a>
                 </div>
             </li>
 
@@ -35,32 +65,58 @@
         </div>
         <div>
             <form action="">
-                <img src="../img/usuario.png" alt="" class="icon">
                 <button class="ovalado">Log in</button>
                 <button class="ovalado">Ingresar</button>
             </form>
         </div>
     </header>
     <titl>
-        <h1>Informacion de la pagina</h1>
+        <h1>Informacion</h1>
     </titl>
     <main>
         <div class="texNos">
-        <h5>What is Lorem Ipsum?
-            
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            Why do we use it?
-            
-            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-            
-            Where does it come from?
-            
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-            
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-            Where can I get some?
-            
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</h5></div>
+            <h5>What is Lorem Ipsum?
+
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+                Why do we use it?
+
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+                search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
+                evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+                Where does it come from?
+
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
+                Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
+                undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
+                Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the
+                theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor
+                sit amet..", comes from a line in section 1.10.32.
+
+                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their
+                exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                Where can I get some?
+
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration in some form, by injected humour, or randomised words which don't look even slightly
+                believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
+                predefined chunks as necessary, making this the first true generator on the Internet. It uses a
+                dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate
+                Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
+                injected humour, or non-characteristic words etc.</h5>
+        </div>
     </main>
     <aside>
         <div class="asflex"></div>
@@ -111,24 +167,10 @@
                 </ul>
         </div>
     </footer>
-    <!--<footer class="footgrid">
-        <div class="titlgrid">
-            <h5>Nuestras redes</h5>
-        </div>
-        <div class="footflex">
-            <ul class="footer__ul">
-                <li class="footer__li"><a href="https://facebook.com" target="_blank"> <img class="png"
-                            src="../img/fc.png" alt=""></a></li>
-                <li class="footer__li"><a href="https://Twitter.com" target="_blank"> <img class="png"
-                            src="../img/tw.png" alt=""></a></li>
-                <li class="footer__li"><a href="https://instagram.com" target="_blank"><img class="png"
-                            src="../img/ig.png" alt=""></a></li>
-            </ul>
-        </div>
-    </footer>-->
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script defer src="../js/script.js"></script>
 </body>
 
 </html>

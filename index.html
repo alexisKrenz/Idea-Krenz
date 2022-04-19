@@ -6,17 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>primer desafio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="./styles/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
     <header class="navdiv">
+        <div class="container-fluid fixed-top">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <div class="container-fluid">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="menuNav" class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item p-2"><a class="navbar-link" href="./index.html">Inicio</a></li>
+                            <li class="nav-item p-2"><a class="navbar-link" href="./pages/galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item p-2"><a class="navbar-link" href="./pages/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item p-2"><a class="navbar-link" href="./pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item p-2"><a class="navbar-link" href="./pages/contacto.html">Contacto</a>
+                            <li class="nav-item p-2"><a class="navbar-link" href="./pages/registro.html">Registro</a>
+                            <li class="nav-item p-2"><a class="navbar-link" href="./index.html">Login/Ingresar</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <form action="">
+                            <input type="search" name="busqueda" id="barrainv" class="busqueda" placeholder="Buscar">
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
         <div>
-            <img src="../img/menu.png" alt="" class="icon" id="lefticon">
+            
             <li><a href="./index.html" id="bot">Inicio</a></li>
-            <li class="dropdown"><a class="menudrop dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" id="bot">Paginas</a>
+            <li class="dropdown"><a class="menudrop dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown"
+                    aria-expanded="false" href="#" id="bot">Paginas</a>
                 <div class="dropdown-menu" role="menu">
                     <a class="dropdown-item" role="presentation" href="./pages/galeria.html">Galeria</a>
                     <a class="dropdown-item" role="presentation" href="./pages/productos.html">Productos</a>
@@ -35,42 +64,15 @@
         </div>
         <div>
             <form action="">
-                <img src="../img/usuario.png" alt="" class="icon">
                 <button class="ovalado">Log in</button>
                 <button class="ovalado">Ingresar</button>
             </form>
         </div>
     </header>
-    <!--<header>
-        <nav>
-            <div>
-                <img src="./img/menu.png" alt="" class="navimg">
-                <ul class="nav">
-                    <li class="navlist"><a href="./indice.html">Productos</a></li>
-                    <li class="navlist"><a href="pages/nosotros.html">Nosotros</a></li>
-                    <li class="navlist"><a href="pages/galeria.html">Galeria</a></li>
-                    <li class="navlist"><a href="pages/registro.html">Registro</a></li>
-                    <li class="navlist"><a href="pages/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="nav3">
-                <form action="" class="nav2">
-                    <input class="nav5" type="text" placeholder="Buscar">
-                </form>
-            </div>
-            <div class="nav4">
-                <img src="./img/usuario.png" alt="" class="navimg">
-                <form action="" method="get" class="navform">
-                    <input class="nav5" type="text" name="usuario" id="name" placeholder="usuario" required>
-                    <input class="nav5" type="password" name="pass" id="pass" placeholder="contraseña" required>
-                    <input class="nav5" type="submit" value="ingresar">
-                </form>
-            </div>
-        </nav>
-        </div>
-    </header>-->
     <main>
-        <div><h1>Novedades</h1></div>
+        <div>
+            <h1>Novedades</h1>
+        </div>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -99,8 +101,10 @@
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Persona 5</h5>
                         <p>El protagonista principal de Persona 5 Royal, Joker, es un estudiante de segundo
-                            año que se traslada a Tokio en la primavera para asistir a la Academia Shujin. Después de darse
-                            cuenta de sus poderes para invocar Personas, lidera al grupo de Phantom Thieves para librar a la
+                            año que se traslada a Tokio en la primavera para asistir a la Academia Shujin. Después de
+                            darse
+                            cuenta de sus poderes para invocar Personas, lidera al grupo de Phantom Thieves para librar
+                            a la
                             ciudad de la corrupción.</p>
                     </div>
                 </div>
@@ -119,7 +123,8 @@
                         <h5>Final Fantasy VII Remake</h5>
                         <p>La historia sigue al mercenario Cloud Strife mientras él y el grupo
                             ecoterrorista AVALANCHE luchan contra la corrupta megacorporación de Shinra y el legendario
-                            exsoldado de Shinra Sefirot. El videojuego combina la acción en tiempo real similar a Dissidia
+                            exsoldado de Shinra Sefirot. El videojuego combina la acción en tiempo real similar a
+                            Dissidia
                             Final Fantasy con otros elementos estratégicos.</p>
                     </div>
                 </div>
@@ -128,7 +133,8 @@
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Ghost of Tsushima</h5>
                         <p>Ghost of Tsushima, desarrollado por Sucker Punch y editado por Sony para
-                            PlayStation 4, es una aventura de acción ambientada en el Japón feudal y en el que un samurái
+                            PlayStation 4, es una aventura de acción ambientada en el Japón feudal y en el que un
+                            samurái
                             trata de hacer frente a la invasión del ejército mongol en el año 1274</p>
                     </div>
                 </div>
@@ -144,126 +150,7 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-
-
     </main>
-    <!--<section>
-        <article>
-            <h1> <b> <i> Novedades</i></b></h1>
-            <div class="novedades">
-                <div class="imgprods">
-                    <img src="img/a1.jpg" alt="" class="imgprod">
-                </div>
-                <div class="detail">
-                    <h3 class="titprod">Elden Ring</h3>
-                    <p class="textprod">EL NUEVO JUEGO DE ROL Y ACCIÓN DE AMBIENTACIÓN FANTÁSTICA. Álzate, Sinluz, y que
-                        la gracia te guíe para abrazar el poder del Círculo de Elden y encumbrarte como señor del
-                        Círculo en las Tierras Intermedias. </p>
-                </div>
-            </div>
-            <div class="novedades">
-                <div class="imgprods">
-                    <img src="img/a2.png" alt="" class="imgprod">
-                </div>
-                <div class="detail">
-                    <h3 class="titprod">Persona 5 Royal</h3>
-                    <p class="textprod">El protagonista principal de Persona 5 Royal, Joker, es un estudiante de segundo
-                        año que se traslada a Tokio en la primavera para asistir a la Academia Shujin. Después de darse
-                        cuenta de sus poderes para invocar Personas, lidera al grupo de Phantom Thieves para librar a la
-                        ciudad de la corrupción. </p>
-                </div>
-            </div>
-            <div class="novedades">
-                <div class="imgprods">
-                    <img src="img/a3.jpg" alt="" class="imgprod">
-                </div>
-                <div class="detail">
-                    <h3 class="titprod">God of War</h3>
-                    <p class="textprod">Kratos ha dejado atrás su venganza contra los dioses del Olimpo y vive ahora
-                        como un hombre en los dominios de los dioses y monstruos nórdicos. En este mundo cruel e
-                        implacable debe luchar para sobrevivir… y enseñar a su hijo a hacerlo también. </p>
-                </div>
-            </div>
-            <div class="novedades">
-                <div class="imgprods">
-                    <img src="img/a4.jpg" alt="" class="imgprod">
-                </div>
-                <div class="detail">
-                    <h3 class="titprod">Final Fantasy VII Remake</h3>
-                    <p class="textprod">La historia sigue al mercenario Cloud Strife mientras él y el grupo
-                        ecoterrorista AVALANCHE luchan contra la corrupta megacorporación de Shinra y el legendario
-                        exsoldado de Shinra Sefirot. El videojuego combina la acción en tiempo real similar a Dissidia
-                        Final Fantasy con otros elementos estratégicos. </p>
-                </div>
-            </div>
-            <div class="novedades">
-                <div class="imgprods">
-                    <img src="img/a5.jpg" alt="" class="imgprod">
-                </div>
-                <div class="detail">
-                    <h3 class="titprod">Ghost of Tsushima</h3>
-                    <p class="textprod">Ghost of Tsushima, desarrollado por Sucker Punch y editado por Sony para
-                        PlayStation 4, es una aventura de acción ambientada en el Japón feudal y en el que un samurái
-                        trata de hacer frente a la invasión del ejército mongol en el año 1274 </p>
-                </div>
-            </div>
-            <div class="novedades">
-                <div class="imgprods">
-                    <img src="img/a6.jpg" alt="" class="imgprod">
-                </div>
-                <div class="detail">
-                    <h3 class="titprod">Blasphemous</h3>
-                    <p class="textprod">La sinopsis que nos conduce hasta Blasphemous es esta: "Una terrible maldición
-                        conocida como el Milagro ha caído sobre la tierra de Cvstodia y sus habitantes. Eres el
-                        Penitente, el único superviviente de la masacre de la hermandad del Lamento Mudo. </p>
-                </div>
-            </div>
-            <div class="novedades">
-                <div class="imgprods">
-                    <img src="img/a7.png" alt="" class="imgprod">
-                </div>
-                <div class="detail">
-                    <h3 class="titprod">Playstation 4</h3>
-                    <p class="textprod">Consola Sony PlayStation 4 Negra / Blanca, Slim 500GB / 1TB Standard color negro
-                        azabache/
-                        Glacier white, con un joystick </p>
-                </div>
-            </div>
-            <div class="novedades">
-                <div class="imgprods">
-                    <img src="img/a8.png" alt="" class="imgprod">
-                </div>
-                <div class="detail">
-                    <h3 class="titprod">Joystick Dualshock PS4</h3>
-                    <p class="textprod">Joystick Dual Shock 4 Controlador inalámbrico para PlayStation 4 colores Varios
-                        Jet Negro / Magma
-                        Red / Camuflaje / Rosa / Azul </p>
-                </div>
-            </div>
-            <div class="novedades">
-                <div class="imgprods">
-                    <img src="img/a9.jpeg" alt="" class="imgprod">
-                </div>
-                <div class="detail">
-                    <h3 class="titprod">Playstation 5</h3>
-                    <p class="textprod">Consola Sony Playstation 5 Ps5 Version Standard con lectora de discos fisicos,
-                        825 GB mas un Joystick </p>
-                </div>
-            </div>
-            <div class="novedades">
-                <div class="imgprods">
-                    <img src="img/a10.png" alt="" class="imgprod">
-                </div>
-                <div class="detail">
-                    <h3 class="titprod">Joystick Dualshock PS5</h3>
-                    <p class="textprod">PlayStation Joystick DualSense 5 Wireless Controller. Colores Varios blanco /
-                        negro / rojo /
-                        purpura / rosa / azul / Camuflaje </p>
-                </div>
-            </div>
-        </article>
-    </section>-->
-
     <aside>
         <div class="asflex"></div>
         <h2><b> <i> Noticias relacionadas</i></b></h2>
@@ -303,13 +190,13 @@
                         <use xlink:href="#twitter" />
                         </svg></a>
                     </li>
-                    <li class="ms-3"><a href="https://instagram.com" target="_blank"><img class="png"
-                                src="./img/ig.png" alt=""></a>
+                    <li class="ms-3"><a href="https://instagram.com" target="_blank"><img class="png" src="./img/ig.png"
+                                alt=""></a>
                         <use xlink:href="#instagram" />
                         </svg></a>
                     </li>
-                    <li class="ms-3"><a href="https://facebook.com" target="_blank"> <img class="png"
-                                src="./img/fc.png" alt=""></a></li><svg class="bi" width="24" height="24"></svg></a>
+                    <li class="ms-3"><a href="https://facebook.com" target="_blank"> <img class="png" src="./img/fc.png"
+                                alt=""></a></li><svg class="bi" width="24" height="24"></svg></a>
                     </li>
                 </ul>
         </div>
@@ -317,6 +204,7 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script defer src="./js/script.js"></script>
 </body>
 
 </html>
