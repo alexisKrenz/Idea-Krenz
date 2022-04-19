@@ -324,7 +324,6 @@ footer {
     display: flex;
     flex-wrap: inherit;
     align-items: center;
-    justify-content: space-between;
     min-width: 450px;
 }
 
@@ -359,10 +358,12 @@ footer {
     .ovalado {
         display: none;
     }
-
+    .busqueda {
+        display: none;
+    }
     #barrainv {
         display: block;
-        margin-left: -70%;
+        
     }
 
     .busqueda {
@@ -376,6 +377,9 @@ footer {
         grid-template-rows: 200px repeat(auto-fit, 200px);
         grid-gap: 30px;
     }
+    #barrainv{
+        display: flex;
+    }
 
     .texNos {
         display: block;
@@ -384,5 +388,6 @@ footer {
         margin-top: 50px;
         margin-bottom: 50px;
     }
+    
 }
 
