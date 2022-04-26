@@ -243,7 +243,14 @@ a {
 
 .imgazar {
   max-width: 100%;
-  max-height: 100%; }
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out; }
+
+.imgazar:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0); }
 
 .png {
   width: 25px;
