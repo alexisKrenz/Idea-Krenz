@@ -46,10 +46,7 @@ header div li {
   position: fixed;
   width: 100%; }
 
-.nav-item {
-  display: none; }
-
-#barrainv {
+.nav-item, #barrainv {
   display: none; }
 
 .navbar > .container,
@@ -273,7 +270,7 @@ a {
 @media screen and (max-width: 767px) {
   .navdiv {
     justify-content: space-evenly; }
-  .nav-item {
+  .nav-item, #barrainv {
     display: flex; }
   .navbar-nav {
     background: linear-gradient(135deg, #ffffff9c, #f06b6b94); }
