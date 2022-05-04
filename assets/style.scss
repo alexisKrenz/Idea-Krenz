@@ -187,14 +187,6 @@ h2 {
 }
 
 h3 {
-    font-family: $fuente;
-    text-align: center;
-    color: $red;
-    -webkit-text-stroke: 2px $black;
-    font-size: 45px;
-}
-
-h5 {
     color: $white;
     font-size: large;
     font-family: $fuente;
@@ -202,6 +194,13 @@ h5 {
     margin-bottom: 30px;
     font-weight: bold;
     text-decoration-color: $black;
+}
+
+h4 {
+    @extend h3;
+    font-size: xx-large;
+    
+    
 }
 
 /*-------formulario contacto-----------*/
@@ -250,6 +249,15 @@ titl {
     color: $white;
     border: 2px $white solid;
     margin-top: 40px;
+}
+
+/*---------cards--------*/
+.card2 {
+    display: grid;
+}
+
+.textoCard{
+    color: $white;
 }
 
 /*-------links----------*/
@@ -372,10 +380,6 @@ a {
 
     .ovalado {
         display: $disnone;
-    }
-
-    .busqueda {
-        display: none;
     }
 
     #barrainv {
