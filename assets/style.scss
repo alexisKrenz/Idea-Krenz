@@ -395,7 +395,7 @@ a {
     .imggridcont {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 200px repeat(auto-fit, 200px);
+        grid-template-rows: 1fr;
         grid-gap: 30px;
     }
 
@@ -409,6 +409,10 @@ a {
         background-color: $dgris;
         margin-top: 50px;
         margin-bottom: 50px;
+    }
+
+    .card {
+        width: 25rem;
     }
 
 }
