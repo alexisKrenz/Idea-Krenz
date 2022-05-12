@@ -180,8 +180,6 @@ h6 {
 p {
     margin-top: 0;
     margin-bottom: 1rem;
-    font-weight: bold;
-    background: linear-gradient(135deg, #000000, rgb(250, 8, 0), #000000, rgb(250, 8, 0) );;
 }
 
 abbr[data-bs-original-title],

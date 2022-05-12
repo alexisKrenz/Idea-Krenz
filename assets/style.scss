@@ -80,6 +80,7 @@ header div li {
     flex-wrap: inherit;
     align-items: center;
     min-width: 450px;
+    justify-content: space-evenly;
 }
 
 .busqueda {
@@ -184,6 +185,7 @@ h2 {
     animation-direction: alternate;
     animation-iteration-count: infinite;
     text-shadow: 0px 0px 50px $blue;
+    margin-top: 10vh;
 }
 
 h3 {
@@ -203,6 +205,18 @@ h4 {
     
 }
 
+.texNos {
+    text-align: justify;
+    padding: 10%;
+    margin-top: 1vh;
+    background-color: rgba(128, 128, 128, 0.199);
+
+    p{ 
+        @extend h4;
+        font-size: 25px;
+        
+    }
+}
 /*-------formulario contacto-----------*/
 
 .formcont {
@@ -211,6 +225,7 @@ h4 {
     flex-direction: map-get($map: $formModel, $key: flex-direction);
     color: map-get($map: $formModel, $key: color);
     align-items: map-get($map: $formModel, $key: align-items);
+    margin-bottom: 8vh;
 }
 
 .forminp {
@@ -252,17 +267,33 @@ titl {
 }
 
 /*---------cards--------*/
+
+.card {
+    width: 30rem;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
 .card2 {
     display: grid;
 }
 
 .textoCard{
     color: $white;
+    font-weight: bold;
+    background: linear-gradient(135deg, #00000091, rgba(250, 8, 0, 0.568), #00000083, rgba(250, 8, 0, 0.473) );;
+    font-size: medium;
+    border-radius: 5px;
+    .text-muted {
+        color: $white !important;
+        text-shadow: 2px 2px 2px blue;
+    }
 }
 
 /*-------links----------*/
 a {
     text-decoration: none;
+    font-weight: 700;
 
     &:visited {
         text-decoration: none;
@@ -283,7 +314,16 @@ a {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    height: 600px;
+    height: auto;
+    width: 65%
+}
+.tex{
+    @extend .textoCard;
+    border-radius: 30px solid;
+}
+
+.carousel-caption{
+    bottom: 4rem;
 }
 
 /*---------imagenes todas-----------*/
@@ -295,7 +335,7 @@ a {
 .imggridcont {
     display: grid;
     grid-template-columns: 290px repeat(auto-fit, 290px);
-    grid-template-rows: 200px repeat(auto-fit, 200px);
+    grid-template-rows: 163px repeat(auto-fit, 163px);
     grid-gap: 30px;
     margin-top: 100px;
 }
@@ -358,7 +398,7 @@ a {
     }
 
     .navbar-nav {
-        background: linear-gradient(135deg, $grad5, $grad6);
+        background: rgba(15, 15, 15, 0.925);
     }
 
     .navbar-link:hover {
@@ -387,6 +427,10 @@ a {
 
     }
 
+    .card{
+        width: 30rem;
+    }
+
     .busqueda {
         display: none;
 
@@ -413,7 +457,16 @@ a {
 
     .card {
         width: 25rem;
+        margin-bottom: 50px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
+    #carouselExampleCaptions {
+        
+        height: 300px;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
 }
 
